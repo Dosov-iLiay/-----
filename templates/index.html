@@ -1,19 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+    background-color: #EFE8D6;
+    justify-content: center;
+}
 
+header {
+    display: flex; 
+    flex-direction: column; 
+    background-image: url(Rectangle_53.png);
+    margin: 0px 250px 0px 250px;  
+    background-size: cover;
+}
+
+.zag_hapka {
+    color: white;
+    font-family: 'UnifrakturCook', cursive;
+    letter-spacing: 10px;
+    margin-left: 50px;
+    margin-bottom: -10px;
+}
+
+.zag_hapka2 {
+    color: white;
+    letter-spacing: 5px;
+    font-family: 'Pangolin', cursive;
+    margin-left: 250px;
+    margin-bottom: 10px;
+}
+
+.glav {
+    display: flex;
+    margin-bottom: -30px;
+}
+
+.bort {
+    color: #966f52;
+    border: 1px solid #CA9C6A;
+    border-radius: 10px;
+    background-color: #CA9C6A;
+    font-family: 'Pangolin', cursive;
+    margin-left: 110px;
+    padding: 5px;
+    transition: 900ms;
+}
+.bort:hover {
+    color: white;
+    border: 1px solid #4A2E0D;
+    border-radius: 10px;
+    background-color: #4A2E0D;
+    font-family: 'Pangolin', cursive;
+    margin-left: 110px;
+    padding: 5px;
+    transition: 900ms;
+
+}
+
+h2 {
+    color: #99684A; 
+    font-family: 'Pangolin', cursive;  
+    letter-spacing: 10px;
+    margin: 50px 250px 0px 300px;
+}
+
+.content {
+    display: flex;
+}
+
+.iimeg {
+    width: 250px;
+    height: 250px;
+    margin: 50px 20px 0px 325px;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-image: url(Rectangle_40.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    background-size: 10% 10%;
+    margin: 25px 50px 0px 100px;
+}
+
+h3 {
+    font-weight: bold;
+    text-align: center; 
+    color: black; 
+    font-family: 'UnifrakturCook', cursive;
+}
+
+h4 {
+    color: black; 
+    font-weight: bold;
+    font-family: 'Pangolin', sans-serif; 
+    margin-left: 20px;
+    margin-top: -10px;
+    /* margin-bottom: -5px; */
+}
+
+p {
+    color: black;
+    font-weight: bold;
+    font-family: 'Pangolin', sans-serif; 
+    margin-top: 10px;
+}
+
+.iimeg2 {
+    width: 250px;
+    height: 250px;
+    margin: 100px 50px 0px 100px;
+}
+
+.card2 {
+    width: 300px;
+    height: 300px;
+    background-image: url(Rectangle_40.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    background-size: 10% 10%;
+    margin: 70px 10px 0px 305px;
+}
+
+.iimeg3 {
+    width: 250px;
+    height: 250px;
+    margin: 150px 20px 0px 325px;
+}
+
+.card3 {
+    width: 350px;
+    height: 350px;
+    background-image: url(Rectangle_40.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    background-size: 10% 10%;
+    margin: 100px 50px 0px 50px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: -20px 0px 0px 50px;
+}
+
+footer {
+    background-color: #CA9C6A; /* Brown background color */
+    border-top: 6px solid rgba(0, 0, 0, 0.20);
+    /* margin: 0px 250px 0px 300px; */
+    color: #FFF; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+  .center {
+    text-align: center;
+    margin-top: 20px;
+  }
+  hr {
+    border: 3px solid rgba(0, 0, 0, 0.20);
+  }
+ 
+input {
+    width: 250px;
+  padding: 15px;
+}
+
+button {
+  background-color: #99684A;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-family: 'Pangolin', cursive;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.cards {
+    width: 1000px;
+    height: 100px;
+    background-image: url(Rectangle_40.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    background-size: 10% 10%;
+    margin: 25px 50px 0px 125px;
+}
+a {
+    text-decoration: none; /* убирает подчеркивание */
+}
+</style>
+</head>
 <body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Flask
-            </p>
-            <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
-            </p>
-        </header>
+  <header>
+    <h1 class="zag_hapka">Просто-быстро</h1>
+    <h1 class="zag_hapka2">Рецепты для подростков</h1>
+    <ul class="glav">
+      <a href="/"><p class="bort">Главная</p></a>
+      <a href="/page"><p class="bort">Рецепты</p></a>
+      <a href="#otziv"><p class="bort">Написать отзыв</p></a>
+    </ul>
+  </header>
+  <h2>Лёгкие рецепты:</h2>
+  <div class="content">
+    <img class="iimeg" src="Rectangle_47.png" alt="">
+    <div class="card">
+      <h3>Тушенные яблоки</h3>
+      <h4>яблоки - 4 шт</h4>
+      <h4>сахар- 200г</h4>
+      <h4>вода - по объему кострюли</h4>
+      <h4>мед - 3 ст.л</h4>
+      <p>Выдавите сердцевину, снимите кожицу.
+      разрезать на 4 части, сложить в кастрюлю.
+      Положить 1 ложку масла, подлить водички 3-4 ложки, посыпать немного сахаром, накрыть крышкой, 
+      тушить до мягкости.</p>
     </div>
-</body>
+  </div>
+  
+  <div class="content">
+    <div class="card2">
+      <h3>Яичница</h3>
+      <h4>яйца - 2 шт</h4>
+      <h4>масло</h4>
+      <p>Сначала нужно поставить сковородку на не сильный огонь,затем, налить масло, распределить 
+        по всей сковородке. Когда масло подогреется, можно кидать разбитые яйца.
+        Накройте крышкой.</p>
+    </div>
+    <img class="iimeg2" src="Rectangle_54.png" alt="">
+  </div>
 
+  <div class="content">
+    <img class="iimeg3" src="Rectangle_55.png" alt="">
+    <div class="card3">
+      <h3>Попкорм</h3>
+      <h4>кукуруза - 100 гр</h4>
+      <h4>масло - 4 ст.л</h4>
+      <h4>приправа - 1 уп</h4>
+      <h4>вода - по объему кострюли</h4>
+      <h4>мед - 3 ст.л</h4>
+      <p>Выдавите сердцевину, снимите кожицу.
+      разрезать на 4 части, сложить в кастрюлю.
+      Положить 1 ложку масла, подлить водички 3-4 ложки, посыпать немного сахаром, накрыть крышкой, 
+      тушить до мягкости.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="content">
+      <img class="logo" src="Ellipse_1.png" alt="">
+      <h2 class="center">Оставьте отзыв:</h2>
+    </div>
+    <hr>
+    <form action="/show" method="post">
+        <input  name="file_name" type="email" placeholder="email@email.com">
+        <br>
+        <br>
+        <input name="file_context" type="text" placeholder="Ваш отзыв">
+        <br>
+        <br>
+        <button type="submit">Отправить</button>
+    </form>
+    <hr id="otziv">
+    {% for file_name, file_content in list_files %}
+    <div class="cards">
+      <h3 class="review-title">{{ file_name }}</h3>
+      <p class="review-text">{% for line in file_content %}{{ line }}{% endfor %}</p>
+    </div>
+    {% endfor %}
+  </footer>
+</body>
 </html>
