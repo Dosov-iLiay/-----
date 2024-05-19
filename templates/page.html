@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    background-color: #EFE8D6;
+    justify-content: center;
+}
+
+header {
+    display: flex; 
+    flex-direction: column; 
+    background-color: #B19777;
+    border-radius: 10px;
+    margin: 0px 250px 0px 250px;  
+    background-size: cover;
+}
+
+.zag_hapka {
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    margin-left: 50px;
+    margin-top: 80px;
+    margin-bottom: -10px;
+}
+
+.zag_hapka2 {
+    font-size: 25px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    color: white; 
+    font-family: 'Pangolin', cursive; 
+    font-variant: none; /* убери засечки */
+    font-weight: 200; /* сделай этот текст тонким */
+    letter-spacing: 10px; 
+    word-wrap: break-word;
+}
+
+.glav {
+    display: flex;
+    margin-bottom: -30px;
+}
+
+.bort {
+    color: #966f52;
+    border: 1px solid #CA9C6A;
+    border-radius: 10px;
+    background-color: #CA9C6A;
+    font-family: 'Pangolin', cursive;
+    margin-left: 110px;
+    padding: 5px;
+}
+
+.content {
+    display: flex;
+}
+.card {
+    width: 350px;
+    height: 1500px;
+    background-image: url(Rectangle_40.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    background-size: 9% 2%;
+    margin: 100px 50px 0px 250px;
+}
+h3 {
+    font-weight: bold;
+    text-align: center; 
+    color: black; 
+    font-family: 'UnifrakturCook', cursive;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    color: black; 
+    font-weight: bold;
+    font-family: 'Pangolin', sans-serif; 
+    margin-left: 20px;
+    margin-top: -20px;
+    /* margin-bottom: -5px; */
+}
+
+p {
+    color: black;
+    font-weight: bold;
+    font-family: 'Pangolin', sans-serif; 
+    margin-top: 10px;
+}
+
+.iimeg {
+    width: 80px;
+    height: 80px;
+    margin: -50px 0px 0px -30px;
+}
+
+.card2 {
+    width: 300px;
+    height: 300px;
+    background-image: url(Rectangle_40.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    background-size: 10% 10%;
+    margin: 100px 50px 0px 50px;
+}
+
+.card3 {
+    width: 300px;
+    height: 300px;
+    background-image: url(Rectangle_40.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    background-size: 10% 10%;
+    margin: 100px 50px 0px 720px;
+    margin-top: -1100px;
+    margin-bottom: 600px;
+}
+
+.card4 {
+    width: 300px;
+    height: 300px;
+    background-image: url(Rectangle_40.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    background-size: 10% 10%;
+    margin: 100px 50px 0px 720px;
+    margin-top: -530px;
+    margin-bottom: 600px;
+}
+
+.card5 {
+    width: 300px;
+    height: 300px;
+    background-image: url(Rectangle_40.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    background-size: 10% 10%;
+    margin: 100px 50px 0px 720px;
+    margin-top: -510px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: -20px 0px 0px 50px;
+}
+
+footer {
+    background-color: #CA9C6A; /* Brown background color */
+    border-top: 6px solid rgba(0, 0, 0, 0.20);
+    /* margin: 0px 250px 0px 300px; */
+    color: #FFF; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+  .center {
+    text-align: center;
+    margin-top: 20px;
+  }
+  hr {
+    border: 3px solid rgba(0, 0, 0, 0.20);
+  }
+ 
+input {
+    width: 250px;
+  padding: 15px;
+}
+
+button {
+  background-color: #99684A;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-family: 'Pangolin', cursive;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.cards {
+    width: 1000px;
+    height: 100px;
+    background-image: url(Rectangle_40.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    background-size: 10% 10%;
+    margin: 25px 50px 0px 125px;
+}
+a {
+    text-decoration: none; /* убирает подчеркивание */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="zag_hapka">Просто-быстро</h1>
+        <h1 class="zag_hapka2">Рецепты для подростков</h1>
+        <ul class="glav">
+          <a href="/"><p class="bort">Главная</p></a>
+          <a href="/page"><p class="bort">Рецепты</p></a>
+          <a href="#otziv"><p class="bort">Написать отзыв</p></a>
+        </ul>
+      </header>
+      
+      <div class="content">
+      <div class="card">
+        <img class="iimeg" src="Rectangle_58.png" alt="">
+        <h3>Хоткейки</h3>
+        <h4>Молоко - 200 мл</h4>
+        <h4>Яйца - 2 шт.</h4>
+        <h4>Сахар - 80 г</h4>
+        <h4>Мука пшеничная - 240 г (1,5 стакана объёмом 250 мл)</h4>
+        <h4>Разрыхлитель - 7 г</h4>
+        <h4>Ванилин - 1 щепотка</h4>
+        <h4>или</h4>
+        <h4>ванильный сахар - 1-2 ч. ложки</h4>
+        <p>В глубокой миске соединить яйца, сахар и ванилин (или ванильный сахар). Хорошо взбить 
+          венчиком или миксером до образования лёгкой пены. Влить молоко и пере
+          мешать. Всеять через мелкое сито муку и разрыхлитель. Хорошо перемешать до однородности. 
+          Тесто должно получиться довольно густым и стекать с ложки или венчика толстой струйкой. 
+          Сухую сковороду с антипригарным покрытием хорошо разогреть на среднем огне. Налить в 
+          сковороду примерно 2 ст. ложки теста, формируя круглый блинчик. Жарить хоткейк на среднем 
+          огне сперва с одной стороны 2-3 минуты, пока сверху он не станет матовым и на поверхности 
+          не появятся пузырьки. Затем перевернуть хоткейк и жарить ещё примерно 1-2 минуты 
+          (можно накрыть сковороду крышкой).Таким же образом пожарить все остальные хоткейки.</p>
+      </div>
+
+      <div class="card2">
+        <img class="iimeg" src="Rectangle_58.png" alt="">
+        <h3>Яичница</h3>
+        <h4>яйца - 2 шт</h4>
+        <h4>масло</h4>
+        <p>Сначала нужно поставить сковородку на не сильный огонь,затем, налить масло, распределить 
+          по всей сковородке. Когда масло подогреется, можно кидать разбитые яйца.
+          Накройте крышкой.</p>
+      </div>
+    </div>
+
+      <div class="card3">
+        <img class="iimeg" src="Rectangle_58.png" alt="">
+        <h3>Чипсы из лаваша</h3>
+        <h4>лаваш - 1 шт</h4>
+        <h4>орегано -</h4>
+        <h4>паприка -</h4>
+        <h4>подсолнечное масло</h4>
+        <h4>соль</h4>
+        <p>Нарезать лаваш квадратиками. Добавить специи. Добавить подсолнечное масло. Отправить 
+          в духовку на 7-10 минут при 180 градусах, духовка заранее разогрета</p>
+      </div>
+
+      <div class="card4">
+        <img class="iimeg" src="Rectangle_58.png" alt="">
+        <h3>Салат “Ёжик” </h3>
+        <h4>яблоки - 4 шт</h4>
+        <h4>сахар- 200г</h4>
+        <h4>вода - по объему кострюли</h4>
+        <h4>мед - 3 ст.л</h4>
+        <p>Выдавите сердцевину, снимите кожицу.
+        разрезать на 4 части, сложить в кастрюлю.
+        Положить 1 ложку масла, подлить водички 3-4 ложки, посыпать немного сахаром, накрыть крышкой, 
+        тушить до мягкости.</p>
+      </div>
+
+      <div class="card5">
+        <img class="iimeg" src="Rectangle_58.png" alt="">
+        <h3>Карамельный пуденг</h3>
+        <h4>яблоки - 4 шт</h4>
+        <h4>сахар- 200г</h4>
+        <h4>вода - по объему кострюли</h4>
+        <h4>мед - 3 ст.л</h4>
+        <p>Выдавите сердцевину, снимите кожицу.
+        разрезать на 4 части, сложить в кастрюлю.
+        Положить 1 ложку масла, подлить водички 3-4 ложки, посыпать немного сахаром, накрыть крышкой, 
+        тушить до мягкости.</p>
+      </div>
+      
+      <footer>
+        <div class="content">
+          <img class="logo" src="Ellipse_1.png" alt="">
+          <h2 class="center">Оставьте отзыв:</h2>
+        </div>
+        <hr>
+        <form action="/show" method="post">
+            <input  name="file_name" type="email" placeholder="email@email.com">
+            <br>
+            <br>
+            <input name="file_context" type="text" placeholder="Ваш отзыв">
+            <br>
+            <br>
+            <button type="submit">Отправить</button>
+        </form>
+        <hr id="otziv">
+        {% for file_name, file_content in list_files %}
+        <div class="cards">
+          <h3 class="review-title">{{ file_name }}</h3>
+          <p class="review-text">{% for line in file_content %}{{ line }}{% endfor %}</p>
+        </div>
+        {% endfor %}
+      </footer>
+</body>
+</html>
